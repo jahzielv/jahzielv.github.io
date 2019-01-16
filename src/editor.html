@@ -1,0 +1,21 @@
+<div id="editormd">
+    <textarea style="display:none;">
+        ### Hello Editor.md !
+    </textarea>
+</div>
+
+<script
+    type="text/javascript"
+    src="http://code.jquery.com/jquery-1.4.2.min.js"
+></script>
+<script src="./editor.md-master/editormd.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var editor = editormd("editormd", {
+            width: 1000,
+            height: 640,
+            syncScrolling: "single",
+            path: "./editor.md-master/lib/"
+        });
+    });
+</script>
