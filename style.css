@@ -188,6 +188,7 @@ nav.nav-menu {
 }
 
 #blog-list {
-    border-left: 30px;
+    /* border-left: 30px; */
+    width: 600px;
 
 }
