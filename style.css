@@ -154,7 +154,7 @@ nav.nav-menu {
     flex: 1 1 auto;
 }
 
-#main-content {
+.main-content {
     padding-left: 10%;
     text-align: left;
 }
@@ -187,6 +187,7 @@ nav.nav-menu {
     padding-left: 8%;
 }
 
-.blog-list {
-    border-left: 20%;
+#blog-list {
+    border-left: 30px;
+
 }
