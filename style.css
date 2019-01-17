@@ -1,4 +1,12 @@
-h1, h2, h3, h4, h5 , h6, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,14 +27,13 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900; */
 
-
-
 a {
     color: #6c71c4;
     text-decoration: none;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -41,15 +48,13 @@ body {
     /* border: #268bd2 solid 1px; */
 }
 
-
 #jahziel {
-    color:#268bd2;
+    color: #268bd2;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 #villasana {
-    color:#859900;
+    color: #859900;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -64,28 +69,45 @@ body {
     animation: fadein 4s linear forwards;
 }
 
-
 .fading-txt {
     -webkit-animation: fadeout 4s linear forwards;
-    animation: fadeout 4s linear forwards; 
+    animation: fadeout 4s linear forwards;
 }
 
 @-webkit-keyframes fadein {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadein {
-    0% {opacity: 0;}
-    50% {opacity: 1;}  
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeout {
-    0% {opacity: 0.7;}
-    50% {opacity: 0;}  
-    100% {opacity: 0;} 
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 #header {
@@ -95,7 +117,6 @@ body {
     align-content: center;
     align-items: center;
     justify-content: space-between;
- 
 }
 
 nav.nav-menu {
@@ -105,7 +126,6 @@ nav.nav-menu {
     padding-right: 20px;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #jve-logo {
@@ -121,19 +141,16 @@ nav.nav-menu {
 }
 
 #name-container {
-
     display: flex;
     flex: 0 1 auto;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 1%;
-
 }
 
 .greeting-container {
     /* border-width: 1px; */
     flex: 1 1 auto;
-
 }
 
 #main-content {
@@ -152,12 +169,12 @@ nav.nav-menu {
 .footerText {
     padding-left: 20px;
     padding-top: 5px;
-    color:#586e75;
+    color: #586e75;
     text-align: left;
 }
 
 #heart {
-    color: #cb4b16
+    color: #cb4b16;
 }
 
 #editormd {
