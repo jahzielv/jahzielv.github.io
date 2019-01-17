@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+    <head>
+        <title>{{ page.title }}</title>
+        <meta name="author" content="Jahziel Villasana-Espinoza" />
+
+        <!-- Homepage CSS -->
+        <link
+            rel="stylesheet"
+            href="style.css"
+            type="text/css"
+            media="screen, projection"
+        />
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="header">
+                <div class="header-item">
+                    <img id="jve-logo" src="assets/jve-logo.jpg" alt="JVE logo" />
+                </div>
+                <nav class="nav-menu">
+                    <div id="link-blog"><a href="./blog.html">Blog</a></div>
+                    <div id="link-bio"><a>Bio</a></div>
+                    <div id="link-resume"><a>Resume</a></div>
+                    <div id="link-contact"><a>Contact</a></div>
+                    <div class="themeButton">
+                        <p id="theme-toggle" onclick="themeToggleClick()">🌚</p>
+                    </div>
+                </nav>
+            </div>
+            <div class="content-container">
+                <div id="name-container">
+                    <h1 id="jahziel" class="fading-txt">Jahziel</h1>
+                    <h1 id="villasana" class="fading-txt">Villasana</h1>
+                    <h1 id="espinoza" class="fading-txt">Espinoza</h1>
+                </div>
+            </div>
+
+            {{ content }}
+        </div>
+        <script src="index.js"></script>
+    </body>
+    <footer class="footer">
+        <div class="footerText">
+            <p>
+                👨‍💻 with 🍞.
+                <a href="https://ethanschoonover.com/solarized/">Colors</a> by
+                <a href="https://twitter.com/ethanschoonover">@ethanschoonover</a>
+            </p>
+        </div>
+    </footer>
+</html>
