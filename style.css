@@ -32,7 +32,7 @@ $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900; */
 
-a {
+a, button {
     color: #6c71c4;
     text-decoration: none;
 }
@@ -211,7 +211,7 @@ nav.nav-menu {
 
 /* Dropdown Button */
 .dropbtn {
-  padding: 16px;
+  padding: 0;
   font-size: 16px;
   border: none;
   background-color: Transparent;
