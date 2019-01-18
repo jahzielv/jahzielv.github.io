@@ -134,6 +134,10 @@ nav.nav-menu {
     justify-content: space-between;
 }
 
+nav.nav-menu a {
+  padding: 16px;
+}
+
 #jve-logo {
     width: 100px;
     align-self: center;
