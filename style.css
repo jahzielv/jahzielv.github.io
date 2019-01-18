@@ -254,4 +254,4 @@ nav.nav-menu a {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #6c71c4;}
+.dropdown:hover .dropbtn {background-color: #eee8d5;}
