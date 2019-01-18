@@ -204,5 +204,6 @@ nav.nav-menu {
 #contact-area {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    max-width: 100px;
+    justify-content: space-around;
 }
