@@ -255,3 +255,7 @@ nav.nav-menu a {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #eee8d5;}
+
+ul.posts {
+  list-style-type: none;
+}
