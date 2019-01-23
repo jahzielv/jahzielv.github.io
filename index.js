@@ -11,12 +11,14 @@ if (isDark == 1) {
     document.getElementsByClassName("nav-menu")[0].style.color = "#839496";
     document.getElementsByClassName("main-content")[0].style.color = "#839496";
     document.getElementById("theme-toggle").innerHTML = "🌝";
+    document.getElementById("syntax-highlight").setAttribute("href", "/dark.css");
 } else {
     console.log("it's 0!");
     document.getElementsByTagName("body")[0].style.backgroundColor = "#fdf6e3";
     document.getElementsByClassName("nav-menu")[0].style.color = "#073642";
     document.getElementsByClassName("main-content")[0].style.color = "#073642";
     document.getElementById("theme-toggle").innerHTML = "🌚";
+    document.getElementById("syntax-highlight").setAttribute("href", "/light.css");
 }
 function themeToggleClick() {
     if (isDark == 1) {
@@ -24,6 +26,7 @@ function themeToggleClick() {
         document.getElementsByClassName("nav-menu")[0].style.color = "#073642";
         document.getElementsByClassName("main-content")[0].style.color = "#073642";
         document.getElementById("theme-toggle").innerHTML = "🌚";
+        document.getElementById("syntax-highlight").setAttribute("href", "/light.css");
         isDark = 0;
         localStorage.setItem("isDark", isDark);
     } else {
@@ -31,6 +34,7 @@ function themeToggleClick() {
         document.getElementsByClassName("nav-menu")[0].style.color = "#839496";
         document.getElementsByClassName("main-content")[0].style.color = "#839496";
         document.getElementById("theme-toggle").innerHTML = "🌝";
+        document.getElementById("syntax-highlight").setAttribute("href", "/dark.css");
         isDark = 1;
         localStorage.setItem("isDark", isDark);
     }
