@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Actual Welcome (GH Pages mini tutorial)
 ---
 
