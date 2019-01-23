@@ -39,7 +39,7 @@ The `_layouts` folder will hold the template HTML pages for Jekyll to use. Using
     </head>
     <body>
         <div id="content">
-            {{content}}
+            {% raw %} {{content}} {% endraw %}
         </div>
     </body>
 <html>    
@@ -71,14 +71,14 @@ title: JVE - Blog
 <div class="main-content" id="blog-list">
     <h1>Blog Posts</h1>
     <ul class="posts">
-        {% for post in site.posts %}
+        {% raw %} {% for post in site.posts %}{% endraw %}
         <li>
             <p>
-                {{ post.date | date_to_string }} &raquo;
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                {% raw %} {{ post.date | date_to_string }}{% endraw %} &raquo;
+                <a href=" {% raw %} {{ post.url }}">{% raw %} {{ post.title }}{% endraw %}</a>
             </p>
         </li>
-        {% endfor %}
+        {% raw %} {% endfor %}{% endraw %}
     </ul>
 </div>
 ```
