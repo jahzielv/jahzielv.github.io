@@ -75,7 +75,7 @@ title: JVE - Blog
         <li>
             <p>
                 {% raw %} {{ post.date | date_to_string }}{% endraw %} &raquo;
-                <a href=" {% raw %} {{ post.url }}">{% raw %} {{ post.title }}{% endraw %}</a>
+                <a href="{% raw %}{{ post.url }}{% endraw %}">{% raw %} {{ post.title }}{% endraw %}</a>
             </p>
         </li>
         {% raw %} {% endfor %}{% endraw %}
