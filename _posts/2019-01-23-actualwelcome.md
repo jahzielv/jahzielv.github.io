@@ -34,11 +34,11 @@ The `_layouts` folder will hold the template HTML pages for Jekyll to use. Using
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{ page.title }}</title>
+        <title>{% raw %}{{ page.title }} {% endraw %}</title>
         <!-- my head stuff... -->
     </head>
     <body>
-        <div id="main-content">
+        <div id="content">
             {{content}}
         </div>
     </body>
