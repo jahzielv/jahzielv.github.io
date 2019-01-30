@@ -170,8 +170,9 @@ nav.nav-menu a {
 
 .main-content {
     padding-left: 10%;
-    width: 1000px;
+    /* width: 1000px; */
     text-align: left;
+    padding-right: 3%;
 }
 
 #theme-toggle {
