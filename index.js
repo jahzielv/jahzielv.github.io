@@ -1,5 +1,4 @@
 let isDark = localStorage.getItem("isDark");
-console.log("isDark: " + isDark);
 if (isDark === null) {
     isDark = 0;
     localStorage.setItem("isDark", 0);
