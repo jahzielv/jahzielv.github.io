@@ -52,9 +52,6 @@ body {
 #page-container {
     flex: 1 0 auto;
     padding: 1%;
-    @media screen and (min-width: 640px) {
-        display: flex;
-    }
     /* border: #268bd2 solid 1px; */
 }
 
@@ -269,4 +266,14 @@ nav.nav-menu a {
 
 ul.posts {
     list-style-type: none;
+}
+
+@media screen and (max-width: 480px) {
+    #name-container {
+        display: none;
+    }
+    .main-content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
