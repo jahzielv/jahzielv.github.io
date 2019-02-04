@@ -13,6 +13,6 @@ a PWA in one day or bust. To my shock, it actually wasn't that hard! Read on for
 
 First off, if you haven't checked the app out, head to [pwanimals.glitch.me](https://pwanimals.glitch.me) to see it in action! As you can see, it's super simple:
 it displays a random picture of an animal, and reloads a fresh animal pic when you press the button. If you're offline, the app's UI still loads,
-but the button is disabled and informs you that you're offline. Pretty basic stuff, but I figured I'd start small :P
+but the button is disabled and informs you that you're offline. Additionally, when you create Pretty basic stuff, but I figured I'd start small :P
 
 One of the main things I wanted to get out of my day of learning
