@@ -337,6 +337,11 @@ nav.mobile-menu {
         padding-left: 5%;
         padding-right: 5%;
     }
+
+    #blog-list {
+        width: auto;
+    }
+
     nav.nav-menu {
         display: none;
     }
