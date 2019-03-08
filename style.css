@@ -130,13 +130,13 @@ nav.nav-menu {
     display: flex;
     flex-direction: row;
     min-width: 300px;
-    padding-right: 20px;
+    padding-left: 10px;
     align-items: center;
     justify-content: space-between;
 }
 
 nav.nav-menu a {
-    padding: 16px;
+    /* padding: 10px; */
 }
 
 #jve-logo {
@@ -174,7 +174,7 @@ nav.nav-menu a {
 
 #theme-toggle {
     cursor: pointer;
-    padding: 16px;
+    padding: 10px;
 }
 
 .footer {
@@ -236,7 +236,7 @@ nav.nav-menu a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -261,11 +261,72 @@ nav.nav-menu a {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
+    /* background-color: #eee8d5; */
+}
+
+/* Dropdown Button */
+.mobile-dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.mobile-dropdown-mobile {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.mobile-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.mobile-dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    right: 0;
+}
+
+/* Change color of dropdown links on hover */
+.mobile-dropdown-content a:hover {
+    background-color: #268bd2;
+}
+
+/* Show the dropdown menu on hover */
+.mobile-dropdown:hover .mobile-dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.mobile-dropdown:hover .mobile-dropbtn {
     background-color: #eee8d5;
 }
 
 ul.posts {
     list-style-type: none;
+}
+
+div.content-container {
+    line-height: 1.6;
+}
+
+div.nav-links {
+    padding: 20px;
+}
+
+nav.mobile-menu {
+    display: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -276,8 +337,11 @@ ul.posts {
         padding-left: 5%;
         padding-right: 5%;
     }
-}
+    nav.nav-menu {
+        display: none;
+    }
 
-div.content-container {
-    line-height: 1.6;
+    nav.mobile-menu {
+        display: block;
+    }
 }
