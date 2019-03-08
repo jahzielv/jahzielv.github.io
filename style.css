@@ -342,6 +342,10 @@ nav.mobile-menu {
         width: auto;
     }
 
+    #blog-post {
+        width: -webkit-fill-available;
+    }
+
     nav.nav-menu {
         display: none;
     }
