@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo:500");
+
 h1,
 h2,
 h3,
@@ -8,7 +10,7 @@ p,
 a,
 ul,
 ol {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Archivo", sans-serif;
 }
 
 li {
@@ -40,17 +42,17 @@ body {
 
 #jahziel {
     color: #268bd2;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 #villasana {
     color: #859900;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 #espinoza {
     color: #cb4b16;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .fading-txt:hover {
@@ -66,6 +68,14 @@ body {
 
 img.emoji {
     width: 25px;
+}
+
+nav.nav-menu {
+    font-weight: bold;
+}
+
+button.dropbtn {
+    font-weight: bold;
 }
 
 @-webkit-keyframes fadein {
