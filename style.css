@@ -64,6 +64,10 @@ body {
     animation: fadeout 4s linear forwards;
 }
 
+img.emoji {
+    width: 25px;
+}
+
 @-webkit-keyframes fadein {
     0% {
         opacity: 0;
