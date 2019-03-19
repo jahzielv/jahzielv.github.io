@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Updates! And new Apps!
+title: First Dev Meetup!
 comments: true
 ---
 
