@@ -328,6 +328,12 @@ nav.mobile-menu {
 }
 
 @media screen and (max-width: 480px) {
+    .dropdown-content {
+        right: 10px;
+    }
+    .dropdown-content a {
+        padding: 0;
+    }
     #name-container {
         display: none;
     }
