@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: weeklyupdate
+title: Weekly Update
 ---
 
 # Weekly Update #5
