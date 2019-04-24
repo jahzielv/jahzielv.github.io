@@ -1,3 +1,3 @@
-# jahz.co - Coming Soon!
+# jahz.co
 
-My personal website.
+My personal website and blog!
