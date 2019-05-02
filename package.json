@@ -1,1 +1,12 @@
-{"dependencies":{"newpost":"^0.0.2"},"newpost":{"frontMatter":{"layout":"post","comments":"true","title":""}}}
+{
+    "dependencies": {
+        "newpost": ">=0.0.2"
+    },
+    "newpost": {
+        "frontMatter": {
+            "layout": "post",
+            "comments": "true",
+            "title": ""
+        }
+    }
+}
