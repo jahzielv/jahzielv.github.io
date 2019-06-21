@@ -38,6 +38,42 @@
             gtag("config", "UA-133199643-1");
         </script>
         <script src="//twemoji.maxcdn.com/2/twemoji.min.js?11.3"></script>
+        <script>
+            let isDark = localStorage.getItem("isDark");
+            if (isDark === null) {
+                isDark = 0;
+                localStorage.setItem("isDark", 0);
+            }
+            if (isDark == 1) {
+                document.getElementsByTagName("body")[0].style.backgroundColor =
+                    "#002b36";
+                document.getElementsByClassName("nav-menu")[0].style.color = "#839496";
+                Array.prototype.forEach.call(
+                    document.getElementsByClassName("main-content"),
+                    element => {
+                        element.style.color = "#839496";
+                    }
+                );
+                document.getElementById("theme-toggle").innerHTML = "🌝";
+                document
+                    .getElementById("syntax-highlight")
+                    .setAttribute("href", "/dark.css");
+            } else {
+                document.getElementsByTagName("body")[0].style.backgroundColor =
+                    "#fdf6e3";
+                document.getElementsByClassName("nav-menu")[0].style.color = "#073642";
+                Array.prototype.forEach.call(
+                    document.getElementsByClassName("main-content"),
+                    element => {
+                        element.style.color = "#073642";
+                    }
+                );
+                document.getElementById("theme-toggle").innerHTML = "🌚";
+                document
+                    .getElementById("syntax-highlight")
+                    .setAttribute("href", "/light.css");
+            }
+        </script>
         <meta charset="UTF-8" />
     </head>
     <body>
