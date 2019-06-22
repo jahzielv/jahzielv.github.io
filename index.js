@@ -1,6 +1,6 @@
 function themeToggleClick() {
     let light = document.getElementById("light");
-    if (light.disabled == true) {
+    if (light.disabled === true) {
         light.disabled = false;
         localStorage.removeItem("theme");
         document.getElementById("themeToggle").innerHTML = "🌚";
