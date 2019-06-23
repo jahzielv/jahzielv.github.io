@@ -70,6 +70,8 @@ img.emoji {
     width: 25px;
 }
 
+
+
 nav.nav-menu {
     font-weight: bold;
 }
@@ -234,7 +236,6 @@ nav.nav-menu {
 .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #f1f1f1; */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -258,9 +259,9 @@ nav.nav-menu {
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    /* background-color: #eee8d5; */
-}
+/* .dropdown:hover .dropbtn {
+    background-color: #859901;
+} */
 
 /* Dropdown Button */
 .mobile-dropbtn {
@@ -326,6 +327,9 @@ div.nav-links {
 nav.mobile-menu {
     display: none;
 }
+    .dropdown-content {
+        right: 5px;
+    }
 
 @media screen and (max-width: 480px) {
     .dropdown-content {
