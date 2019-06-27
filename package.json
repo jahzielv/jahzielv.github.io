@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "newpost": ">=0.0.2"
+        "newpost": "^1.1.1"
     },
     "newpost": {
         "frontMatter": {

@@ -659,10 +659,10 @@ ncp@1.0.x:
   resolved "https://registry.yarnpkg.com/ncp/-/ncp-1.0.1.tgz#d15367e5cb87432ba117d2bf80fdf45aecfb4246"
   integrity sha1-0VNn5cuHQyuhF9K/gP30Wuz7QkY=
 
-newpost@>=0.0.2:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/newpost/-/newpost-1.0.0.tgz#0854a465ae5b09db7fd22fba2d01e907999079a1"
-  integrity sha512-7HjzCmARx47LWyZ3Mt6OVY7ub2jIzL4Rj1t17DJ7upsQh/cE26M88GNX84L2DTAuR70qEF2ROD2/0HXg+ik6Wg==
+newpost@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/newpost/-/newpost-1.1.1.tgz#77880a0eb6617a84cb63ffe969157b944c5b8618"
+  integrity sha512-GPb6khf8rhq3zH2uMC1eOf9xhACUGwqkxIc0q0gNcyMIgWigoeWijkT/G8Q05fYeR61Z2r87jsjpm5vUS+fjzg==
   dependencies:
     app-root-path "^2.2.1"
     ascii-art "^1.5.1"
@@ -672,6 +672,7 @@ newpost@>=0.0.2:
     lodash.isempty "^4.4.0"
     prompt "^1.0.0"
     readline-sync "^1.4.9"
+    rimraf "^2.6.3"
     terminal-link "^1.2.0"
     yargonaut "^1.1.4"
     yargs "^13.2.2"
@@ -891,7 +892,7 @@ revalidator@0.1.x:
   resolved "https://registry.yarnpkg.com/revalidator/-/revalidator-0.1.8.tgz#fece61bfa0c1b52a206bd6b18198184bdd523a3b"
   integrity sha1-/s5hv6DBtSoga9axgZgYS91SOjs=
 
-rimraf@2.x.x:
+rimraf@2.x.x, rimraf@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
   integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
