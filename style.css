@@ -140,7 +140,7 @@ nav.nav-menu {
 }
 
 #jve-logo {
-    width: 100px;
+    width: 175px;
     align-self: center;
     border-radius: 200px;
 }
@@ -148,6 +148,7 @@ nav.nav-menu {
 .content-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     padding-top: 2%;
     flex: 1;
 }
@@ -169,7 +170,7 @@ nav.nav-menu {
     padding-left: 10%;
     /* width: 1000px; */
     text-align: left;
-    padding-right: 3%;
+    padding-right: 10%;
 }
 
 #theme-toggle {
