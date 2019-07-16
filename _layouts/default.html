@@ -15,19 +15,7 @@
             type="text/css"
             media="screen, projection"
         />
-        <link
-            rel="stylesheet"
-            href="/assets/animated-sticky-header.css"
-            type="text/css"
-            media="screen, projection"
-        />
-        <!-- <link
-            rel="stylesheet"
-            href=""
-            type="text/css"
-            media="screen, projection"
-            id="syntax-highlight"
-        /> -->
+
         <link rel="icon" href="/assets/favicon.ico" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script
@@ -652,118 +640,93 @@
     </head>
     <body>
         <div id="page-container">
-            <header id="header">
-                <div class="header-item">
-                    <a href="/">
-                        <img id="jve-logo" src="/assets/logo4.png" alt="JVE logo" />
-                    </a>
+            <header>
+                <div id="header1" class="header header--alpha">
+                    <img src="/assets/logo4.png" alt="JVE Logo" width="300px" />
+                    <nav class="nav-menu" style="color: rgb(131, 148, 150);">
+                        <div id="link-blog" class="nav-links">
+                            <a href="/blog">Blog</a>
+                        </div>
+                        <div id="link-bio" class="nav-links">
+                            <a href="/bio">Bio</a>
+                        </div>
+                        <div id="link-resume" class="nav-links">
+                            <a href="/resume">Resume</a>
+                        </div>
+                        <div id="link-contact"></div>
+                        <div class="themeButton">
+                            <p onclick="themeToggleClick()" id="themeToggle">
+                                <img
+                                    draggable="false"
+                                    class="emoji"
+                                    alt="🌚"
+                                    src="https://twemoji.maxcdn.com/2/72x72/1f31a.png"
+                                />
+                            </p>
+                        </div>
+                    </nav>
                 </div>
-
-                <!-- menu for mobile  -->
-                <nav class="mobile-menu">
-                    <div id="menu">
-                        <div class="dropdown">
-                            <button class="dropbtn">Menu</button>
-                            <div class="dropdown-content">
-                                <div id="link-blog" class="nav-links">
-                                    <a href="/blog">Blog</a>
-                                </div>
-                                <div id="link-bio" class="nav-links">
-                                    <a href="/bio">Bio</a>
-                                </div>
-                                <div id="link-resume" class="nav-links">
-                                    <a href="/resume">Resume</a>
-                                </div>
-                                <div id="link-contact">
-                                    <div class="mobile-dropdown">
-                                        <button class="mobile-dropbtn">
-                                            <p>
-                                                Contact
-                                            </p>
-                                        </button>
-                                        <div class="mobile-dropdown-content">
-                                            <a href="https://twitter.com/jahz_v"
-                                                >@jahz_v</a
-                                            >
-                                            <a href="https://github.com/jahzielv">
-                                                GitHub
-                                            </a>
-                                            <a href="mailto:jve@jahz.co">jve@jahz.co</a>
-                                            <a
-                                                href="https://www.linkedin.com/in/jahziel-v"
-                                            >
-                                                LinkedIn
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="themeButton">
-                                    <p id="theme-toggle" onclick="themeToggleClick()">
-                                        🌝
-                                    </p>
-                                </div>
-                            </div>
+                <div id="header2" class="header header--beta">
+                    <img src="/assets/logo4.png" alt="JVE Logo" width="100px" />
+                    <nav>
+                        <div id="link-blog" class="nav-links">
+                            <a href="/blog">Blog</a>
                         </div>
-                    </div>
-                </nav>
-
-                <!-- menu for desktop -->
-                <nav class="nav-menu" style="color: rgb(131, 148, 150);">
-                    <div id="link-blog" class="nav-links"><a href="/blog">Blog</a></div>
-                    <div id="link-bio" class="nav-links"><a href="/bio">Bio</a></div>
-                    <div id="link-resume" class="nav-links">
-                        <a href="/resume">Resume</a>
-                    </div>
-                    <div id="link-contact">
-                        <div class="dropdown">
-                            <button class="dropbtn">Contact</button>
-                            <div class="dropdown-content">
-                                <a href="https://twitter.com/jahz_v">@jahz_v</a>
-                                <a href="https://github.com/jahzielv"> GitHub </a>
-                                <a href="mailto:jve@jahz.co">jve@jahz.co</a>
-                                <a href="https://www.linkedin.com/in/jahziel-v">
-                                    LinkedIn
-                                </a>
-                            </div>
+                        <div id="link-bio" class="nav-links">
+                            <a href="/bio">Bio</a>
                         </div>
-                    </div>
-                    <div class="themeButton">
-                        <p onclick="themeToggleClick()" id="themeToggle">🌚</p>
-                    </div>
-                </nav>
+                        <div id="link-resume" class="nav-links">
+                            <a href="/resume">Resume</a>
+                        </div>
+                        <div id="link-contact"></div>
+                        <div class="themeButton">
+                            <p onclick="themeToggleClick()" id="themeToggle">
+                                <img
+                                    draggable="false"
+                                    class="emoji"
+                                    alt="🌚"
+                                    src="https://twemoji.maxcdn.com/2/72x72/1f31a.png"
+                                />
+                            </p>
+                        </div>
+                    </nav>
+                </div>
             </header>
-            <div class="content-container">
+            <div class="fake-header"></div>
+            <main class="content-container">
                 {{ content }}
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="footerText fading-txt">
+                <p>
+                    👨‍💻 with 🍞. © Jahziel Villasana-Espinoza.
+                </p>
             </div>
-        </div>
-        <script src="/index.js"></script>
+        </footer>
     </body>
-    <footer class="footer">
-        <div class="footerText fading-txt">
-            <p>
-                👨‍💻 with 🍞. © Jahziel Villasana-Espinoza.
-            </p>
-        </div>
-    </footer>
+
+    <script src="/index.js"></script>
     <script src="assets/lodash.js"></script>
     <script>
-        twemoji.parse(document.body);
-        let checkHeader = _.throttle(() => {
-            // Detect scroll position
-            let scrollPosition = Math.round(window.scrollY);
-            // If we've scrolled 100px, add "sticky" class to the header
-            if (scrollPosition > 100) {
-                document.querySelector("header").classList.add("sticky");
-                document.getElementById("jve-logo").style.width = "100px";
-                document.querySelector("header").style.flexDirection = "row";
-            }
-            // If not, remove "sticky" class from header
-            else {
-                document.querySelector("header").classList.remove("sticky");
-                document.getElementById("jve-logo").style.width = "300px";
-                document.querySelector("header").style.flexDirection = "column";
-            }
-        }, 300);
-        window.addEventListener("scroll", checkHeader);
+        // twemoji.parse(document.body);
+        const $realSticky = document.querySelector("header");
+        const $fakeSticky = document.querySelector(".fake-header");
+
+        const stickyHeader = () =>
+            function() {
+                const sr1 = $fakeSticky.getBoundingClientRect();
+                const sr2 = $realSticky.getBoundingClientRect();
+
+                if (sr1.top > 0) {
+                    $realSticky.classList.remove("sticky");
+                    $fakeSticky.style.top = 0;
+                } else {
+                    $realSticky.classList.add("sticky");
+                    $fakeSticky.style.top = `-${sr2.height + 1}px`;
+                }
+            };
+
+        window.addEventListener("scroll", _.debounce(stickyHeader(), 15));
     </script>
 </html>
