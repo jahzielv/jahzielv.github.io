@@ -15,6 +15,12 @@
             type="text/css"
             media="screen, projection"
         />
+        <link
+            rel="stylesheet"
+            href="/assets/animated-sticky-header.css"
+            type="text/css"
+            media="screen, projection"
+        />
         <!-- <link
             rel="stylesheet"
             href=""
@@ -646,7 +652,7 @@
     </head>
     <body>
         <div id="page-container">
-            <div id="header">
+            <header id="header">
                 <div class="header-item">
                     <a href="/">
                         <img id="jve-logo" src="/assets/logo4.png" alt="JVE logo" />
@@ -670,7 +676,11 @@
                                 </div>
                                 <div id="link-contact">
                                     <div class="mobile-dropdown">
-                                        <button class="mobile-dropbtn">Contact</button>
+                                        <button class="mobile-dropbtn">
+                                            <p>
+                                                Contact
+                                            </p>
+                                        </button>
                                         <div class="mobile-dropdown-content">
                                             <a href="https://twitter.com/jahz_v"
                                                 >@jahz_v</a
@@ -721,7 +731,7 @@
                         <p onclick="themeToggleClick()" id="themeToggle">🌚</p>
                     </div>
                 </nav>
-            </div>
+            </header>
             <div class="content-container">
                 {{ content }}
             </div>
@@ -735,7 +745,25 @@
             </p>
         </div>
     </footer>
+    <script src="assets/lodash.js"></script>
     <script>
         twemoji.parse(document.body);
+        let checkHeader = _.throttle(() => {
+            // Detect scroll position
+            let scrollPosition = Math.round(window.scrollY);
+            // If we've scrolled 100px, add "sticky" class to the header
+            if (scrollPosition > 100) {
+                document.querySelector("header").classList.add("sticky");
+                document.getElementById("jve-logo").style.width = "100px";
+                document.querySelector("header").style.flexDirection = "row";
+            }
+            // If not, remove "sticky" class from header
+            else {
+                document.querySelector("header").classList.remove("sticky");
+                document.getElementById("jve-logo").style.width = "300px";
+                document.querySelector("header").style.flexDirection = "column";
+            }
+        }, 300);
+        window.addEventListener("scroll", checkHeader);
     </script>
 </html>
