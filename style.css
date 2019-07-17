@@ -36,7 +36,8 @@ body {
 
 #page-container {
     flex: 1 0 auto;
-    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     /* border: #268bd2 solid 1px; */
 }
 
@@ -79,43 +80,6 @@ div#HCB_comment_box {
     margin: auto;
 }
 
-@-webkit-keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeout {
-    0% {
-        opacity: 0.7;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-
 
 #jve-logo {
     width: 300px;
@@ -129,14 +93,6 @@ div#HCB_comment_box {
     justify-content: center;
     padding-top: 2%;
     flex: 1;
-}
-
-#name-container {
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1%;
 }
 
 .greeting-container {
@@ -167,22 +123,13 @@ div#HCB_comment_box {
     text-align: left;
 }
 
-#heart {
-    color: #cb4b16;
-}
+
 
 #editormd {
     width: 1000px;
     /* border: blue solid 1px; */
 }
 
-.blog-container {
-    padding-left: 8%;
-}
-
-#blog-list {
-    width: 1000px;
-}
 
 #blog-post {
     max-width: 700px;
@@ -201,7 +148,7 @@ ul.posts {
     list-style-type: none;
 }
 
-div.content-container {
+main.content-container {
     line-height: 1.6;
 }
 
@@ -225,10 +172,12 @@ div.content-container {
 
 header {
     display: flex;
+    width: 100%;
     flex-direction: column;
   top: 0;
   position: relative;
   overflow: hidden;
+  font-size: 30px;
 }
 
 #header2 {
@@ -236,14 +185,16 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red
+    background-color: #fdf6e3;
+    z-index: 5;
+    /* border: 1px solid red */
 }
 
 #header1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red
+    /* border: 1px solid red */
 }
 
 nav.nav-menu {
@@ -252,7 +203,7 @@ nav.nav-menu {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid black
+    /* border: 1px solid black */
 }
 
 nav.nav-menu-beta {
@@ -261,7 +212,7 @@ nav.nav-menu-beta {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid black
+    /* border: 1px solid black */
 }
 
 header.sticky {
@@ -280,7 +231,7 @@ header.sticky {
 
 .header--beta {
   position: absolute;
-  /* top: 0; */
+  top: 0;
   left: 0;
   right: 0;
   opacity: .5;
@@ -291,6 +242,8 @@ header.sticky {
   opacity: 1;
   transform: translateY(0);
   transition: .35s ease-out;
+    box-shadow: 5px 10px 20px #93a1a1;
+    font-size: 18px;
 }
 
 .fake-header {
