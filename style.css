@@ -41,39 +41,9 @@ body {
     /* border: #268bd2 solid 1px; */
 }
 
-#jahziel {
-    color: #268bd2;
-    /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-#villasana {
-    color: #859900;
-    /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-#espinoza {
-    color: #cb4b16;
-    /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-.fading-txt:hover {
-    /* opacity: 1; */
-    -webkit-animation: fadein 4s linear forwards;
-    animation: fadein 4s linear forwards;
-}
-
-.fading-txt {
-    -webkit-animation: fadeout 4s linear forwards;
-    animation: fadeout 4s linear forwards;
-}
-
 img.emoji {
     width: 25px;
 }
-
-
-
-
 
 div#HCB_comment_box {
     max-width: 700px;
@@ -208,7 +178,7 @@ nav.nav-menu {
 
 nav.nav-menu-beta {
     display: flex;
-    width: 33%;
+    width: 40%;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
