@@ -148,6 +148,7 @@ header {
   position: relative;
   overflow: hidden;
   font-size: 30px;
+  /* height: 100vh; */
 }
 
 #header2 {
@@ -163,6 +164,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* height: 100vh; */
     /* border: 1px solid red */
 }
 
