@@ -279,17 +279,6 @@ header {
   border-color: #cb4b16 transparent transparent transparent;
 }
 
-.popup2 .popuptext2::after {
-  content: "";
-  position: absolute;
-  top: -30%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color:  transparent transparent #cb4b16 transparent;
-}
-
 /* Toggle this class - hide and show the popup */
 .popup .show {
   visibility: visible;
@@ -308,57 +297,59 @@ header {
   to {opacity:1 ;}
 }
 
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+.popup2 .popuptext2 {
+  visibility: hidden;
+  width: 160px;
+  border: 1px solid #cb4b16;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -160%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup2 .popuptext2::after {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:  transparent transparent #cb4b16 transparent;
+}
+
+
+
 .popup2 .show2 {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+  -webkit-animation: fadeIn2 1s;
+  animation: fadeIn2 1s;
 }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeIn2 {
   from {opacity: 0;} 
   to {opacity: 1;}
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn2 {
   from {opacity: 0;}
   to {opacity:1 ;}
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  /* color: black; */
-  padding: 12px 16px;
-  /* text-decoration: none; */
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-.dropdownBtns {
-    display: flex;
-    justify-content: center;
 }
