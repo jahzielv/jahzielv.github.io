@@ -924,9 +924,25 @@
                 if (sr1.top > 0) {
                     $realSticky.classList.remove("sticky");
                     $fakeSticky.style.top = 0;
+                    var popup = document.getElementById("myPopup");
+                    var popup2 = document.getElementById("myPopup2");
+                    if (popup.classList.contains("show")) {
+                        popup.classList.toggle("show");
+                    }
+                    if (popup2.classList.contains("show2")) {
+                        popup2.classList.toggle("show2");
+                    }
                 } else {
                     $realSticky.classList.add("sticky");
                     $fakeSticky.style.top = `-${sr2.height / 2 + 1}px`;
+                    var popup = document.getElementById("myPopup");
+                    var popup2 = document.getElementById("myPopup2");
+                    if (popup.classList.contains("show")) {
+                        popup.classList.toggle("show");
+                    }
+                    if (popup2.classList.contains("show2")) {
+                        popup2.classList.toggle("show2");
+                    }
                 }
             };
 
