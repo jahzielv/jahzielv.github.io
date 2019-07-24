@@ -138,6 +138,12 @@ main.content-container {
     #blog-post {
         width: -webkit-fill-available;
     }
+
+    .sticky-icons {
+      width: 25px;
+    }
+
+
 }
 
 header {
@@ -190,7 +196,7 @@ nav.nav-menu {
 
 nav.nav-menu-beta {
     display: flex;
-    width: 40%;
+    width: 50%;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
