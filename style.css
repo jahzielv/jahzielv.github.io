@@ -140,7 +140,7 @@ main.content-container {
     }
 
     .sticky-icons {
-      width: 25px;
+      width: 50px;
     }
 
 
@@ -196,10 +196,11 @@ nav.nav-menu {
 
 nav.nav-menu-beta {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding: 5%;
     /* border: 1px solid black */
 }
 
