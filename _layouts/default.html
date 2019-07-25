@@ -3,22 +3,12 @@
     <head>
         <title>{{ page.title }}</title>
         <meta name="author" content="Jahziel Villasana-Espinoza" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Homepage CSS -->
         <link
             rel="stylesheet"
             href="/style.css"
-            type="text/css"
-            media="screen, projection"
-        />
-
-        <link
-            rel="stylesheet"
-            href="/menu.css"
             type="text/css"
             media="screen, projection"
         />
@@ -424,6 +414,10 @@
             .imageTwo {
                 z-index: 0;
             }
+
+            .popup2 .popuptext2 {
+                background-color: #002b36;
+            }
         </style>
         <style id="light">
             .highlight pre {
@@ -666,6 +660,10 @@
             .imageTwo {
                 z-index: 1;
             }
+
+            .popup2 .popuptext2 {
+                background-color: #fdf6e3;
+            }
         </style>
         <script>
             if (localStorage.getItem("theme") == "dark") {
@@ -701,8 +699,8 @@
                             <a href="/blog">
                                 <img
                                     src="/assets/blogging-cyan.svg"
-                                    width="100px"
                                     id="blog-icon"
+                                    class="normal-icons"
                                 />
                             </a>
                         </div>
@@ -710,8 +708,8 @@
                             <a href="/resume"
                                 ><img
                                     src="/assets/resume.svg"
-                                    width="100px"
                                     id="resume-icon"
+                                    class="normal-icons"
                                 />
                             </a>
                         </div>
@@ -721,6 +719,7 @@
                                     src="/assets/postbox-orange.svg"
                                     width="100px"
                                     id="contact-icon"
+                                    class="normal-icons"
                                 />
                                 <div class="popuptext" id="myPopup">
                                     <a href="https://github.com/jahzielv"
@@ -754,8 +753,8 @@
                             <a href="/bio">
                                 <img
                                     src="/assets/thinking.svg"
-                                    width="100px"
                                     alt="bio pic"
+                                    class="normal-icons"
                                 />
                             </a>
                         </div>
@@ -770,52 +769,48 @@
                             <a href="/blog">
                                 <img
                                     src="/assets/blogging-cyan.svg"
-                                    width="35px"
                                     class="sticky-icons"
                                 />
                             </a>
                         </div>
                         <div id="link-resume" class="nav-links">
                             <a href="/resume">
-                                <img
-                                    src="/assets/resume.svg"
-                                    width="35px"
-                                    class="sticky-icons"
-                                />
+                                <img src="/assets/resume.svg" class="sticky-icons" />
                             </a>
                         </div>
                         <div id="link-contact">
                             <div class="popup2" onclick="myFunction2()">
                                 <img
                                     src="/assets/postbox-orange.svg"
-                                    width="35px"
                                     class="sticky-icons"
                                 />
                                 <div class="popuptext2" id="myPopup2">
-                                    <a href="https://github.com/jahzielv"
-                                        ><img
-                                            src="/assets/github-yellow.svg"
-                                            alt="github logo"
-                                            width="25px"
-                                    /></a>
-                                    <a href="mailto:jve@jahz.co"
-                                        ><img
-                                            src="/assets/email.svg"
-                                            alt="email icon"
-                                            width="25px"
-                                    /></a>
-                                    <a href="https://twitter.com/jahz_v"
-                                        ><img
-                                            src="/assets/twitter-gold.svg"
-                                            alt="twitter logo"
-                                            width="25px"
-                                    /></a>
-                                    <a href="https://www.linkedin.com/in/jahziel-v/"
-                                        ><img
-                                            src="/assets/linkedin-red.svg"
-                                            alt="linkedin logo"
-                                            width="25px"
-                                    /></a>
+                                    <div class="popup2-links">
+                                        <a href="https://github.com/jahzielv"
+                                            ><img
+                                                src="/assets/github-yellow.svg"
+                                                alt="github logo"
+                                                class="popup-icons"
+                                        /></a>
+                                        <a href="mailto:jve@jahz.co"
+                                            ><img
+                                                src="/assets/email.svg"
+                                                alt="email icon"
+                                                class="popup-icons"
+                                        /></a>
+                                        <a href="https://twitter.com/jahz_v"
+                                            ><img
+                                                src="/assets/twitter-gold.svg"
+                                                alt="twitter logo"
+                                                class="popup-icons"
+                                        /></a>
+                                        <a href="https://www.linkedin.com/in/jahziel-v/"
+                                            ><img
+                                                src="/assets/linkedin-red.svg"
+                                                alt="linkedin logo"
+                                                class="popup-icons"
+                                        /></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -823,7 +818,6 @@
                             <a href="/bio">
                                 <img
                                     src="/assets/thinking.svg"
-                                    width="35px"
                                     alt="bio pic"
                                     class="sticky-icons"
                                 />

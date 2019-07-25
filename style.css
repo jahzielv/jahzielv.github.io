@@ -122,28 +122,11 @@ main.content-container {
     line-height: 1.6;
 }
 
-
-
-@media screen and (max-width: 480px) {
-
-    .main-content {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    #blog-list {
-        width: auto;
-    }
-
-    #blog-post {
-        width: -webkit-fill-available;
-    }
-
     .sticky-icons {
-      width: 50px;
+      width: 48px;
     }
-
-
+.normal-icons {
+  width: 100px;
 }
 
 header {
@@ -200,7 +183,7 @@ nav.nav-menu-beta {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
     /* border: 1px solid black */
 }
 
@@ -293,6 +276,14 @@ header {
   animation: fadeIn 1s;
 }
 
+.popup-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+}
+
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
@@ -318,16 +309,15 @@ header {
 
 .popup2 .popuptext2 {
   visibility: hidden;
-  width: 160px;
+  width: 230px;
   border: 1px solid #cb4b16;
-  color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
   z-index: 1;
-  bottom: -160%;
-  left: 50%;
+  bottom: -170%;
+  left: -45%;
   margin-left: -80px;
 }
 
@@ -350,6 +340,15 @@ header {
   animation: fadeIn2 1s;
 }
 
+.popup2-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+}
+
+
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn2 {
   from {opacity: 0;} 
@@ -359,4 +358,46 @@ header {
 @keyframes fadeIn2 {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+    .popup-icons {
+      width: 35px;
+    }
+
+
+@media screen and (max-width: 480px) {
+
+    .main-content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #blog-list {
+        width: auto;
+    }
+
+    #blog-post {
+        width: -webkit-fill-available;
+    }
+
+    .sticky-icons {
+      width: 45px;
+    }
+
+    .nav-menu-beta {
+      padding-top: 50px;
+      padding-bottom: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .normal-icons {
+      width: 85px;
+    }
+
+
+  
+}
+
+
 }
