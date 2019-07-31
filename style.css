@@ -36,48 +36,13 @@ body {
 
 #page-container {
     flex: 1 0 auto;
-    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     /* border: #268bd2 solid 1px; */
-}
-
-#jahziel {
-    color: #268bd2;
-    /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-#villasana {
-    color: #859900;
-    /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-#espinoza {
-    color: #cb4b16;
-    /* font-family: Arial, Helvetica, sans-serif; */
-}
-
-.fading-txt:hover {
-    /* opacity: 1; */
-    -webkit-animation: fadein 4s linear forwards;
-    animation: fadein 4s linear forwards;
-}
-
-.fading-txt {
-    -webkit-animation: fadeout 4s linear forwards;
-    animation: fadeout 4s linear forwards;
 }
 
 img.emoji {
     width: 25px;
-}
-
-
-
-nav.nav-menu {
-    font-weight: bold;
-}
-
-button.dropbtn {
-    font-weight: bold;
 }
 
 div#HCB_comment_box {
@@ -85,62 +50,9 @@ div#HCB_comment_box {
     margin: auto;
 }
 
-@-webkit-keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeout {
-    0% {
-        opacity: 0.7;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-#header {
-    margin: 1%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav.nav-menu {
-    display: flex;
-    flex-direction: row;
-    min-width: 300px;
-    padding-left: 10px;
-    align-items: center;
-    justify-content: space-between;
-}
 
 #jve-logo {
-    width: 100px;
+    width: 300px;
     align-self: center;
     border-radius: 200px;
 }
@@ -148,16 +60,9 @@ nav.nav-menu {
 .content-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     padding-top: 2%;
     flex: 1;
-}
-
-#name-container {
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1%;
 }
 
 .greeting-container {
@@ -168,8 +73,9 @@ nav.nav-menu {
 .main-content {
     padding-left: 10%;
     /* width: 1000px; */
+    width: 100%;
     text-align: left;
-    padding-right: 3%;
+    padding-right: 10%;
 }
 
 #theme-toggle {
@@ -188,22 +94,13 @@ nav.nav-menu {
     text-align: left;
 }
 
-#heart {
-    color: #cb4b16;
-}
+
 
 #editormd {
     width: 1000px;
     /* border: blue solid 1px; */
 }
 
-.blog-container {
-    padding-left: 8%;
-}
-
-#blog-list {
-    width: 1000px;
-}
 
 #blog-post {
     max-width: 700px;
@@ -216,131 +113,144 @@ nav.nav-menu {
     justify-content: space-around;
 }
 
-/* Dropdown Button */
-.dropbtn {
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-}
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #268bd2;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {
-    background-color: #859901;
-} */
-
-/* Dropdown Button */
-.mobile-dropbtn {
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.mobile-dropdown-mobile {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.mobile-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.mobile-dropdown-content a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    right: 0;
-}
-
-/* Change color of dropdown links on hover */
-.mobile-dropdown-content a:hover {
-    background-color: #268bd2;
-}
-
-/* Show the dropdown menu on hover */
-.mobile-dropdown:hover .mobile-dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.mobile-dropdown:hover .mobile-dropbtn {
-    background-color: #eee8d5;
-}
 
 ul.posts {
     list-style-type: none;
 }
 
-div.content-container {
+main.content-container {
     line-height: 1.6;
 }
 
-div.nav-links {
-    padding: 20px;
+    .sticky-icons {
+      width: 48px;
+    }
+.normal-icons {
+  width: 100px;
 }
 
-nav.mobile-menu {
-    display: none;
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  top: 0;
+  position: relative;
+  overflow: hidden;
+  font-size: 30px;
+  /* height: 100vh; */
+    /* border: 1px solid red */
 }
-    .dropdown-content {
-        right: 5px;
+
+.light-switch-div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 4%;
+    /* border: 1px solid black */
+}
+
+#header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    /* border: 1px solid red */
+}
+
+#header1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+    /* border: 1px solid orange  */
+}
+
+nav.nav-menu {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black */
+}
+
+nav.nav-menu-beta {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+    /* border: 1px solid black */
+}
+
+header.sticky {
+  position: sticky;
+}
+
+.header--alpha {
+  transition: .225s ease-out;
+}
+
+.sticky .header--alpha {
+  opacity: .5;
+  transform: translateY(-100%);
+  transition: none;
+}
+
+.header--beta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: .5;
+  transform: translateY(-100%);
+}
+
+.sticky .header--beta {
+  opacity: 1;
+  transform: translateY(0);
+  transition: .35s ease-out;
+    box-shadow: 5px 10px 20px #93a1a1;
+    font-size: 18px;
+}
+
+.fake-header {
+  height: 1px;
+  position: relative;
+}
+
+header {
+  pointer-events: none;
+}
+
+.header {
+  pointer-events: all;
+}
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn2 {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn2 {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+    .popup-icons {
+      width: 35px;
     }
+
 
 @media screen and (max-width: 480px) {
-    .dropdown-content {
-        right: 10px;
-    }
-    .dropdown-content a {
-        padding: 0;
-    }
-    #name-container {
-        display: none;
-    }
+
     .main-content {
         padding-left: 5%;
         padding-right: 5%;
@@ -354,11 +264,54 @@ nav.mobile-menu {
         width: -webkit-fill-available;
     }
 
-    nav.nav-menu {
-        display: none;
+    .sticky-icons {
+      width: 45px;
     }
 
-    nav.mobile-menu {
-        display: block;
+    .nav-menu-beta {
+      padding-top: 50px;
+      padding-bottom: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
     }
+
+    .normal-icons {
+      width: 85px;
+    }
+  
 }
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.contact-row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+
+.theme-toggle {
+    cursor: pointer;
+}
+

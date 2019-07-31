@@ -3,10 +3,7 @@
     <head>
         <title>{{ page.title }}</title>
         <meta name="author" content="Jahziel Villasana-Espinoza" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Homepage CSS -->
         <link
@@ -15,13 +12,7 @@
             type="text/css"
             media="screen, projection"
         />
-        <!-- <link
-            rel="stylesheet"
-            href=""
-            type="text/css"
-            media="screen, projection"
-            id="syntax-highlight"
-        /> -->
+
         <link rel="icon" href="/assets/favicon.ico" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script
@@ -37,7 +28,6 @@
 
             gtag("config", "UA-133199643-1");
         </script>
-        <script src="//twemoji.maxcdn.com/2/twemoji.min.js?11.3"></script>
         <style id="dark">
             .highlight pre {
                 background-color: #002b36;
@@ -389,6 +379,9 @@
             .highlight pre .il {
                 color: #2aa198;
             }
+            #header2 {
+                background-color: #073642;
+            }
 
             /* Literal.Number.Integer.Long */
 
@@ -407,8 +400,25 @@
             .dropdown-content {
                 background-color: #002b36;
             }
-        </style>
+            .sticky .header--beta {
+                opacity: 1;
+                transform: translateY(0);
+                transition: 0.35s ease-out;
+                box-shadow: 5px 1px 2px #002b36;
+                font-size: 18px;
+            }
+            .imageOne {
+                z-index: 1;
+            }
 
+            .imageTwo {
+                z-index: 0;
+            }
+
+            .popup2 .popuptext2 {
+                background-color: #002b36;
+            }
+        </style>
         <style id="light">
             .highlight pre {
                 background-color: #fdf6e3;
@@ -636,112 +646,189 @@
             .dropdown-content {
                 background-color: #fdf6e3;
             }
+            #header2 {
+                background-color: #fdf6e3;
+            }
+            .sticky .header--beta {
+                box-shadow: 5px 10px 20px #93a1a1;
+            }
+
+            .imageOne {
+                z-index: 0;
+            }
+
+            .imageTwo {
+                z-index: 1;
+            }
+
+            .popup2 .popuptext2 {
+                background-color: #fdf6e3;
+            }
         </style>
         <script>
             if (localStorage.getItem("theme") == "dark") {
                 document.getElementById("light").disabled = true;
             }
         </script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
         <meta charset="UTF-8" />
     </head>
     <body>
         <div id="page-container">
-            <div id="header">
-                <div class="header-item">
+            <header>
+                <div id="header1" class="header header--alpha">
+                    <div class="light-switch-div">
+                        <img
+                            alt="theme toggle"
+                            src="/assets/day-and-night.svg"
+                            width="40px"
+                            onclick="themeToggleClick()"
+                            class="theme-toggle"
+                        />
+                    </div>
                     <a href="/">
-                        <img id="jve-logo" src="/assets/jve-logo.jpg" alt="JVE logo" />
+                        <img src="/assets/logo5.png" alt="JVE Logo" width="400px" />
                     </a>
-                </div>
 
-                <!-- menu for mobile  -->
-                <nav class="mobile-menu">
-                    <div id="menu">
-                        <div class="dropdown">
-                            <button class="dropbtn">Menu</button>
-                            <div class="dropdown-content">
-                                <div id="link-blog" class="nav-links">
-                                    <a href="/blog">Blog</a>
-                                </div>
-                                <div id="link-bio" class="nav-links">
-                                    <a href="/bio">Bio</a>
-                                </div>
-                                <div id="link-resume" class="nav-links">
-                                    <a href="/resume">Resume</a>
-                                </div>
-                                <div id="link-contact">
-                                    <div class="mobile-dropdown">
-                                        <button class="mobile-dropbtn">Contact</button>
-                                        <div class="mobile-dropdown-content">
-                                            <a href="https://twitter.com/jahz_v"
-                                                >@jahz_v</a
-                                            >
-                                            <a href="https://github.com/jahzielv">
-                                                GitHub
-                                            </a>
-                                            <a href="mailto:jve@jahz.co">jve@jahz.co</a>
-                                            <a
-                                                href="https://www.linkedin.com/in/jahziel-v"
-                                            >
-                                                LinkedIn
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="themeButton">
-                                    <p id="theme-toggle" onclick="themeToggleClick()">
-                                        🌝
-                                    </p>
-                                </div>
-                            </div>
+                    <nav class="nav-menu">
+                        <div id="link-blog" class="nav-links">
+                            <a href="/blog">
+                                <img
+                                    src="/assets/blogging-cyan.svg"
+                                    id="blog-icon"
+                                    class="normal-icons"
+                                />
+                            </a>
                         </div>
-                    </div>
-                </nav>
-
-                <!-- menu for desktop -->
-                <nav class="nav-menu" style="color: rgb(131, 148, 150);">
-                    <div id="link-blog" class="nav-links"><a href="/blog">Blog</a></div>
-                    <div id="link-bio" class="nav-links"><a href="/bio">Bio</a></div>
-                    <div id="link-resume" class="nav-links">
-                        <a href="/resume">Resume</a>
-                    </div>
-                    <div id="link-contact">
-                        <div class="dropdown">
-                            <button class="dropbtn">Contact</button>
-                            <div class="dropdown-content">
-                                <a href="https://twitter.com/jahz_v">@jahz_v</a>
-                                <a href="https://github.com/jahzielv"> GitHub </a>
-                                <a href="mailto:jve@jahz.co">jve@jahz.co</a>
-                                <a href="https://www.linkedin.com/in/jahziel-v">
-                                    LinkedIn
-                                </a>
-                            </div>
+                        <div id="link-resume" class="nav-links">
+                            <a href="/resume"
+                                ><img
+                                    src="/assets/resume.svg"
+                                    id="resume-icon"
+                                    class="normal-icons"
+                                />
+                            </a>
                         </div>
-                    </div>
-                    <div class="themeButton">
-                        <p onclick="themeToggleClick()" id="themeToggle">🌚</p>
-                    </div>
-                </nav>
-            </div>
-            <div class="content-container">
-                <div id="name-container">
-                    <h1 id="jahziel" class="fading-txt">Jahziel</h1>
-                    <h1 id="villasana" class="fading-txt">Villasana</h1>
-                    <h1 id="espinoza" class="fading-txt">Espinoza</h1>
+                        <div id="link-contact">
+                            <a href="/contact"
+                                ><img
+                                    src="/assets/postbox-orange.svg"
+                                    width="100px"
+                                    id="contact-icon"
+                                    class="normal-icons"
+                            /></a>
+                        </div>
+                        <div id="link-bio">
+                            <a href="/bio">
+                                <img
+                                    src="/assets/thinking.svg"
+                                    alt="bio pic"
+                                    class="normal-icons"
+                                />
+                            </a>
+                        </div>
+                    </nav>
                 </div>
-
+                <div id="header2" class="header header--beta">
+                    <nav class="nav-menu-beta">
+                        <div id="link-blog" class="nav-links">
+                            <a href="/blog">
+                                <img
+                                    src="/assets/blogging-cyan.svg"
+                                    class="sticky-icons"
+                                />
+                            </a>
+                        </div>
+                        <div id="link-resume" class="nav-links">
+                            <a href="/resume">
+                                <img src="/assets/resume.svg" class="sticky-icons" />
+                            </a>
+                        </div>
+                        <div id="link-contact">
+                            <a href="/contact"
+                                ><img
+                                    src="/assets/postbox-orange.svg"
+                                    class="sticky-icons"
+                            /></a>
+                        </div>
+                        <div id="link-bio">
+                            <a href="/bio">
+                                <img
+                                    src="/assets/thinking.svg"
+                                    alt="bio pic"
+                                    class="sticky-icons"
+                                />
+                            </a>
+                        </div>
+                        <div class="themeButton">
+                            <img
+                                alt="theme toggle"
+                                src="/assets/day-and-night.svg"
+                                width="40px"
+                                onclick="themeToggleClick()"
+                                class="theme-toggle"
+                            />
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="fake-header"></div>
+            <main class="content-container">
                 {{ content }}
-            </div>
+            </main>
         </div>
-        <script src="/index.js"></script>
     </body>
-    <footer class="footer">
-        <div class="footerText">
-            <p>
-                👨‍💻 with 🍞. © Jahziel Villasana-Espinoza.
-            </p>
-        </div>
-    </footer>
+
+    <script src="/index.js"></script>
+    <script src="/assets/lodash.js"></script>
     <script>
-        twemoji.parse(document.body);
+        // twemoji.parse(document.body);
+        const $realSticky = document.querySelector("header");
+        const $fakeSticky = document.querySelector(".fake-header");
+
+        const stickyHeader = () =>
+            function() {
+                const sr1 = $fakeSticky.getBoundingClientRect();
+                const sr2 = $realSticky.getBoundingClientRect();
+
+                if (sr1.top > 0) {
+                    $realSticky.classList.remove("sticky");
+                    $fakeSticky.style.top = 0;
+                    var popup = document.getElementById("myPopup");
+                    var popup2 = document.getElementById("myPopup2");
+                    if (popup.classList.contains("show")) {
+                        popup.classList.toggle("show");
+                    }
+                    if (popup2.classList.contains("show2")) {
+                        popup2.classList.toggle("show2");
+                    }
+                } else {
+                    $realSticky.classList.add("sticky");
+                    $fakeSticky.style.top = `-${sr2.height / 2 + 1}px`;
+                    var popup = document.getElementById("myPopup");
+                    var popup2 = document.getElementById("myPopup2");
+                    if (popup.classList.contains("show")) {
+                        popup.classList.toggle("show");
+                    }
+                    if (popup2.classList.contains("show2")) {
+                        popup2.classList.toggle("show2");
+                    }
+                }
+            };
+
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show2");
+        }
+        window.addEventListener("scroll", _.debounce(stickyHeader(), 15));
     </script>
 </html>
