@@ -20,6 +20,9 @@
             src="https://www.googletagmanager.com/gtag/js?id=UA-133199643-1"
         ></script>
         <script>
+            window.addEventListener("error", event => {
+                console.log(event);
+            });
             window.dataLayer = window.dataLayer || [];
             function gtag() {
                 dataLayer.push(arguments);
@@ -800,6 +803,18 @@
                     $fakeSticky.style.top = 0;
                     var popup = document.getElementById("myPopup");
                     var popup2 = document.getElementById("myPopup2");
+                    if (!$realSticky) {
+                        return;
+                    }
+                    if (!$fakeSticky) {
+                        return;
+                    }
+                    if (!popup) {
+                        return;
+                    }
+                    if (!popup2) {
+                        return;
+                    }
                     if (popup.classList.contains("show")) {
                         popup.classList.toggle("show");
                     }
@@ -811,6 +826,18 @@
                     $fakeSticky.style.top = `-${sr2.height / 2 + 1}px`;
                     var popup = document.getElementById("myPopup");
                     var popup2 = document.getElementById("myPopup2");
+                    if (!$realSticky) {
+                        return;
+                    }
+                    if (!$fakeSticky) {
+                        return;
+                    }
+                    if (!popup) {
+                        return;
+                    }
+                    if (!popup2) {
+                        return;
+                    }
                     if (popup.classList.contains("show")) {
                         popup.classList.toggle("show");
                     }
