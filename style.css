@@ -305,7 +305,8 @@ header {
 .contact-row {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center
 }
@@ -315,3 +316,6 @@ header {
     cursor: pointer;
 }
 
+.contact-icons {
+    padding: 25%;
+}
