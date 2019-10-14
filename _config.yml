@@ -1,0 +1,15 @@
+# Site settings
+title: "jahz.co"
+description: "Jahziel talks about computers!"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+permalink: /:year/:title
+github: "jahzielv"
+twitter: "jahz_v"
+email: "jve@jahz.co"
+disqus-id: "example" #leave blank if you dont want comments.
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed

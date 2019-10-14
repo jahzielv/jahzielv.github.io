@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+    <head>
+        <title>{{ page.title }}</title>
+        <meta name="author" content="Jahziel Villasana-Espinoza" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Homepage CSS -->
+        <link
+            rel="stylesheet"
+            href="/style.css"
+            type="text/css"
+            media="screen, projection"
+        />
+
+        <link rel="icon" href="/assets/favicon.ico" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-133199643-1"
+        ></script>
+        <script>
+            window.addEventListener("error", event => {
+                console.log(event);
+            });
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-133199643-1");
+        </script>
+        <style id="dark">
+            .highlight pre {
+                background-color: #002b36;
+                color: #93a1a1;
+            }
+
+            .highlight pre .lineno {
+                color: #586e75;
+            }
+
+            /* Line Numbers */
+            .highlight pre .c {
+                color: #586e75;
+            }
+
+            /* Comment */
+            .highlight pre .err {
+                color: #93a1a1;
+            }
+
+            /* Error */
+            .highlight pre .g {
+                color: #93a1a1;
+            }
+
+            /* Generic */
+            .highlight pre .k {
+                color: #859900;
+            }
+
+            /* Keyword */
+            .highlight pre .l {
+                color: #93a1a1;
+            }
+
+            /* Literal */
+            .highlight pre .n {
+                color: #93a1a1;
+            }
+
+            /* Name */
+            .highlight pre .o {
+                color: #859900;
+            }
+
+            /* Operator */
+            .highlight pre .x {
+                color: #cb4b16;
+            }
+
+            /* Other */
+            .highlight pre .p {
+                color: #93a1a1;
+            }
+
+            /* Punctuation */
+            .highlight pre .cm {
+                color: #586e75;
+            }
+
+            /* Comment.Multiline */
+            .highlight pre .cp {
+                color: #859900;
+            }
+
+            /* Comment.Preproc */
+            .highlight pre .c1 {
+                color: #586e75;
+            }
+
+            /* Comment.Single */
+            .highlight pre .cs {
+                color: #859900;
+            }
+
+            /* Comment.Special */
+            .highlight pre .gd {
+                color: #2aa198;
+            }
+
+            /* Generic.Deleted */
+            .highlight pre .ge {
+                color: #93a1a1;
+                font-style: italic;
+            }
+
+            /* Generic.Emph */
+            .highlight pre .gr {
+                color: #dc322f;
+            }
+
+            /* Generic.Error */
+            .highlight pre .gh {
+                color: #cb4b16;
+            }
+
+            /* Generic.Heading */
+            .highlight pre .gi {
+                color: #859900;
+            }
+
+            /* Generic.Inserted */
+            .highlight pre .go {
+                color: #93a1a1;
+            }
+
+            /* Generic.Output */
+            .highlight pre .gp {
+                color: #93a1a1;
+            }
+
+            /* Generic.Prompt */
+            .highlight pre .gs {
+                color: #93a1a1;
+                font-weight: bold;
+            }
+
+            /* Generic.Strong */
+            .highlight pre .gu {
+                color: #cb4b16;
+            }
+
+            /* Generic.Subheading */
+            .highlight pre .gt {
+                color: #93a1a1;
+            }
+
+            /* Generic.Traceback */
+            .highlight pre .kc {
+                color: #cb4b16;
+            }
+
+            /* Keyword.Constant */
+            .highlight pre .kd {
+                color: #268bd2;
+            }
+
+            /* Keyword.Declaration */
+            .highlight pre .kn {
+                color: #859900;
+            }
+
+            /* Keyword.Namespace */
+            .highlight pre .kp {
+                color: #859900;
+            }
+
+            /* Keyword.Pseudo */
+            .highlight pre .kr {
+                color: #268bd2;
+            }
+
+            /* Keyword.Reserved */
+            .highlight pre .kt {
+                color: #dc322f;
+            }
+
+            /* Keyword.Type */
+            .highlight pre .ld {
+                color: #93a1a1;
+            }
+
+            /* Literal.Date */
+            .highlight pre .m {
+                color: #2aa198;
+            }
+
+            /* Literal.Number */
+            .highlight pre .s {
+                color: #2aa198;
+            }
+
+            /* Literal.String */
+            .highlight pre .na {
+                color: #93a1a1;
+            }
+
+            /* Name.Attribute */
+            .highlight pre .nb {
+                color: #b58900;
+            }
+
+            /* Name.Builtin */
+            .highlight pre .nc {
+                color: #268bd2;
+            }
+
+            /* Name.Class */
+            .highlight pre .no {
+                color: #cb4b16;
+            }
+
+            /* Name.Constant */
+            .highlight pre .nd {
+                color: #268bd2;
+            }
+
+            /* Name.Decorator */
+            .highlight pre .ni {
+                color: #cb4b16;
+            }
+
+            /* Name.Entity */
+            .highlight pre .ne {
+                color: #cb4b16;
+            }
+
+            /* Name.Exception */
+            .highlight pre .nf {
+                color: #268bd2;
+            }
+
+            /* Name.Function */
+            .highlight pre .nl {
+                color: #93a1a1;
+            }
+
+            /* Name.Label */
+            .highlight pre .nn {
+                color: #93a1a1;
+            }
+
+            /* Name.Namespace */
+            .highlight pre .nx {
+                color: #93a1a1;
+            }
+
+            /* Name.Other */
+            .highlight pre .py {
+                color: #93a1a1;
+            }
+
+            /* Name.Property */
+            .highlight pre .nt {
+                color: #268bd2;
+            }
+
+            /* Name.Tag */
+            .highlight pre .nv {
+                color: #268bd2;
+            }
+
+            /* Name.Variable */
+            .highlight pre .ow {
+                color: #859900;
+            }
+
+            /* Operator.Word */
+            .highlight pre .w {
+                color: #93a1a1;
+            }
+
+            /* Text.Whitespace */
+            .highlight pre .mf {
+                color: #2aa198;
+            }
+
+            /* Literal.Number.Float */
+            .highlight pre .mh {
+                color: #2aa198;
+            }
+
+            /* Literal.Number.Hex */
+            .highlight pre .mi {
+                color: #2aa198;
+            }
+
+            /* Literal.Number.Integer */
+            .highlight pre .mo {
+                color: #2aa198;
+            }
+
+            /* Literal.Number.Oct */
+            .highlight pre .sb {
+                color: #586e75;
+            }
+
+            /* Literal.String.Backtick */
+            .highlight pre .sc {
+                color: #2aa198;
+            }
+
+            /* Literal.String.Char */
+            .highlight pre .sd {
+                color: #93a1a1;
+            }
+
+            /* Literal.String.Doc */
+            .highlight pre .s2 {
+                color: #2aa198;
+            }
+
+            /* Literal.String.Double */
+            .highlight pre .se {
+                color: #cb4b16;
+            }
+
+            /* Literal.String.Escape */
+            .highlight pre .sh {
+                color: #93a1a1;
+            }
+
+            /* Literal.String.Heredoc */
+            .highlight pre .si {
+                color: #2aa198;
+            }
+
+            /* Literal.String.Interpol */
+            .highlight pre .sx {
+                color: #2aa198;
+            }
+
+            /* Literal.String.Other */
+            .highlight pre .sr {
+                color: #dc322f;
+            }
+
+            /* Literal.String.Regex */
+            .highlight pre .s1 {
+                color: #2aa198;
+            }
+
+            /* Literal.String.Single */
+            .highlight pre .ss {
+                color: #2aa198;
+            }
+
+            /* Literal.String.Symbol */
+            .highlight pre .bp {
+                color: #268bd2;
+            }
+
+            /* Name.Builtin.Pseudo */
+            .highlight pre .vc {
+                color: #268bd2;
+            }
+
+            /* Name.Variable.Class */
+            .highlight pre .vg {
+                color: #268bd2;
+            }
+
+            /* Name.Variable.Global */
+            .highlight pre .vi {
+                color: #268bd2;
+            }
+
+            /* Name.Variable.Instance */
+            .highlight pre .il {
+                color: #2aa198;
+            }
+            #header2 {
+                background-color: #073642;
+            }
+
+            /* Literal.Number.Integer.Long */
+
+            body {
+                background-color: #002b36;
+            }
+
+            .nav-menu {
+                color: #839496;
+            }
+
+            .main-content {
+                color: #839496;
+            }
+
+            .dropdown-content {
+                background-color: #002b36;
+            }
+            .sticky .header--beta {
+                opacity: 1;
+                transform: translateY(0);
+                transition: 0.35s ease-out;
+                box-shadow: 5px 1px 2px #002b36;
+                font-size: 18px;
+            }
+            .imageOne {
+                z-index: 1;
+            }
+
+            .imageTwo {
+                z-index: 0;
+            }
+
+            .popup2 .popuptext2 {
+                background-color: #002b36;
+            }
+        </style>
+        <style id="light">
+            .highlight pre {
+                background-color: #fdf6e3;
+                color: #93a1a1;
+            }
+            .highlight .c {
+                color: #586e75;
+            } /* Comment */
+            .highlight .err {
+                color: #93a1a1;
+            } /* Error */
+            .highlight .g {
+                color: #93a1a1;
+            } /* Generic */
+            .highlight .k {
+                color: #859900;
+            } /* Keyword */
+            .highlight .l {
+                color: #93a1a1;
+            } /* Literal */
+            .highlight .n {
+                color: #93a1a1;
+            } /* Name */
+            .highlight .o {
+                color: #859900;
+            } /* Operator */
+            .highlight .x {
+                color: #cb4b16;
+            } /* Other */
+            .highlight .p {
+                color: #93a1a1;
+            } /* Punctuation */
+            .highlight .cm {
+                color: #586e75;
+            } /* Comment.Multiline */
+            .highlight .cp {
+                color: #859900;
+            } /* Comment.Preproc */
+            .highlight .c1 {
+                color: #586e75;
+            } /* Comment.Single */
+            .highlight .cs {
+                color: #859900;
+            } /* Comment.Special */
+            .highlight .gd {
+                color: #2aa198;
+            } /* Generic.Deleted */
+            .highlight .ge {
+                color: #93a1a1;
+                font-style: italic;
+            } /* Generic.Emph */
+            .highlight .gr {
+                color: #dc322f;
+            } /* Generic.Error */
+            .highlight .gh {
+                color: #cb4b16;
+            } /* Generic.Heading */
+            .highlight .gi {
+                color: #859900;
+            } /* Generic.Inserted */
+            .highlight .go {
+                color: #93a1a1;
+            } /* Generic.Output */
+            .highlight .gp {
+                color: #93a1a1;
+            } /* Generic.Prompt */
+            .highlight .gs {
+                color: #93a1a1;
+                font-weight: bold;
+            } /* Generic.Strong */
+            .highlight .gu {
+                color: #cb4b16;
+            } /* Generic.Subheading */
+            .highlight .gt {
+                color: #93a1a1;
+            } /* Generic.Traceback */
+            .highlight .kc {
+                color: #cb4b16;
+            } /* Keyword.Constant */
+            .highlight .kd {
+                color: #268bd2;
+            } /* Keyword.Declaration */
+            .highlight .kn {
+                color: #859900;
+            } /* Keyword.Namespace */
+            .highlight .kp {
+                color: #859900;
+            } /* Keyword.Pseudo */
+            .highlight .kr {
+                color: #268bd2;
+            } /* Keyword.Reserved */
+            .highlight .kt {
+                color: #dc322f;
+            } /* Keyword.Type */
+            .highlight .ld {
+                color: #93a1a1;
+            } /* Literal.Date */
+            .highlight .m {
+                color: #2aa198;
+            } /* Literal.Number */
+            .highlight .s {
+                color: #2aa198;
+            } /* Literal.String */
+            .highlight .na {
+                color: #93a1a1;
+            } /* Name.Attribute */
+            .highlight .nb {
+                color: #b58900;
+            } /* Name.Builtin */
+            .highlight .nc {
+                color: #268bd2;
+            } /* Name.Class */
+            .highlight .no {
+                color: #cb4b16;
+            } /* Name.Constant */
+            .highlight .nd {
+                color: #268bd2;
+            } /* Name.Decorator */
+            .highlight .ni {
+                color: #cb4b16;
+            } /* Name.Entity */
+            .highlight .ne {
+                color: #cb4b16;
+            } /* Name.Exception */
+            .highlight .nf {
+                color: #268bd2;
+            } /* Name.Function */
+            .highlight .nl {
+                color: #93a1a1;
+            } /* Name.Label */
+            .highlight .nn {
+                color: #93a1a1;
+            } /* Name.Namespace */
+            .highlight .nx {
+                color: #555;
+            } /* Name.Other */
+            .highlight .py {
+                color: #93a1a1;
+            } /* Name.Property */
+            .highlight .nt {
+                color: #268bd2;
+            } /* Name.Tag */
+            .highlight .nv {
+                color: #268bd2;
+            } /* Name.Variable */
+            .highlight .ow {
+                color: #859900;
+            } /* Operator.Word */
+            .highlight .w {
+                color: #93a1a1;
+            } /* Text.Whitespace */
+            .highlight .mf {
+                color: #2aa198;
+            } /* Literal.Number.Float */
+            .highlight .mh {
+                color: #2aa198;
+            } /* Literal.Number.Hex */
+            .highlight .mi {
+                color: #2aa198;
+            } /* Literal.Number.Integer */
+            .highlight .mo {
+                color: #2aa198;
+            } /* Literal.Number.Oct */
+            .highlight .sb {
+                color: #586e75;
+            } /* Literal.String.Backtick */
+            .highlight .sc {
+                color: #2aa198;
+            } /* Literal.String.Char */
+            .highlight .sd {
+                color: #93a1a1;
+            } /* Literal.String.Doc */
+            .highlight .s2 {
+                color: #2aa198;
+            } /* Literal.String.Double */
+            .highlight .se {
+                color: #cb4b16;
+            } /* Literal.String.Escape */
+            .highlight .sh {
+                color: #93a1a1;
+            } /* Literal.String.Heredoc */
+            .highlight .si {
+                color: #2aa198;
+            } /* Literal.String.Interpol */
+            .highlight .sx {
+                color: #2aa198;
+            } /* Literal.String.Other */
+            .highlight .sr {
+                color: #dc322f;
+            } /* Literal.String.Regex */
+            .highlight .s1 {
+                color: #2aa198;
+            } /* Literal.String.Single */
+            .highlight .ss {
+                color: #2aa198;
+            } /* Literal.String.Symbol */
+            .highlight .bp {
+                color: #268bd2;
+            } /* Name.Builtin.Pseudo */
+            .highlight .vc {
+                color: #268bd2;
+            } /* Name.Variable.Class */
+            .highlight .vg {
+                color: #268bd2;
+            } /* Name.Variable.Global */
+            .highlight .vi {
+                color: #268bd2;
+            } /* Name.Variable.Instance */
+            .highlight .il {
+                color: #2aa198;
+            } /* Literal.Number.Integer.Long */
+
+            body {
+                background-color: #fdf6e3;
+            }
+
+            .nav-menu {
+                color: #073642;
+            }
+
+            .main-content {
+                color: #073642;
+            }
+
+            .dropdown-content {
+                background-color: #fdf6e3;
+            }
+            #header2 {
+                background-color: #fdf6e3;
+            }
+            .sticky .header--beta {
+                box-shadow: 5px 10px 20px #93a1a1;
+            }
+
+            .imageOne {
+                z-index: 0;
+            }
+
+            .imageTwo {
+                z-index: 1;
+            }
+
+            .popup2 .popuptext2 {
+                background-color: #fdf6e3;
+            }
+        </style>
+        <script>
+            if (localStorage.getItem("theme") == "dark") {
+                document.getElementById("light").disabled = true;
+            }
+        </script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <div id="page-container">
+            <header>
+                <div id="header1" class="header header--alpha">
+                    <div class="light-switch-div">
+                        <img
+                            alt="theme toggle"
+                            src="/assets/day-and-night.svg"
+                            width="40px"
+                            onclick="themeToggleClick()"
+                            class="theme-toggle"
+                        />
+                    </div>
+                    <a href="/">
+                        <img src="/assets/logo5.png" alt="JVE Logo" width="400px" />
+                    </a>
+
+                    <nav class="nav-menu">
+                        <div id="link-blog" class="nav-links">
+                            <a href="/blog">
+                                <img
+                                    src="/assets/blogging-cyan.svg"
+                                    id="blog-icon"
+                                    class="normal-icons"
+                                />
+                            </a>
+                        </div>
+                        <div id="link-resume" class="nav-links">
+                            <a href="/resume"
+                                ><img
+                                    src="/assets/resume.svg"
+                                    id="resume-icon"
+                                    class="normal-icons"
+                                />
+                            </a>
+                        </div>
+                        <div id="link-contact">
+                            <a href="/contact"
+                                ><img
+                                    src="/assets/postbox-orange.svg"
+                                    width="100px"
+                                    id="contact-icon"
+                                    class="normal-icons"
+                            /></a>
+                        </div>
+                        <div id="link-bio">
+                            <a href="/bio">
+                                <img
+                                    src="/assets/thinking.svg"
+                                    alt="bio pic"
+                                    class="normal-icons"
+                                />
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div id="header2" class="header header--beta">
+                    <nav class="nav-menu-beta">
+                        <div id="link-blog" class="nav-links">
+                            <a href="/blog">
+                                <img
+                                    src="/assets/blogging-cyan.svg"
+                                    class="sticky-icons"
+                                />
+                            </a>
+                        </div>
+                        <div id="link-resume" class="nav-links">
+                            <a href="/resume">
+                                <img src="/assets/resume.svg" class="sticky-icons" />
+                            </a>
+                        </div>
+                        <div id="link-contact">
+                            <a href="/contact"
+                                ><img
+                                    src="/assets/postbox-orange.svg"
+                                    class="sticky-icons"
+                            /></a>
+                        </div>
+                        <div id="link-bio">
+                            <a href="/bio">
+                                <img
+                                    src="/assets/thinking.svg"
+                                    alt="bio pic"
+                                    class="sticky-icons"
+                                />
+                            </a>
+                        </div>
+                        <div class="themeButton">
+                            <img
+                                alt="theme toggle"
+                                src="/assets/day-and-night.svg"
+                                width="40px"
+                                onclick="themeToggleClick()"
+                                class="theme-toggle"
+                            />
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="fake-header"></div>
+            <main class="content-container">
+                {{ content }}
+            </main>
+        </div>
+    </body>
+
+    <script src="/index.js"></script>
+    <script src="/assets/lodash.js"></script>
+    <script>
+        // twemoji.parse(document.body);
+        const $realSticky = document.querySelector("header");
+        const $fakeSticky = document.querySelector(".fake-header");
+
+        const stickyHeader = () =>
+            function() {
+                const sr1 = $fakeSticky.getBoundingClientRect();
+                const sr2 = $realSticky.getBoundingClientRect();
+
+                if (sr1.top > 0) {
+                    $realSticky.classList.remove("sticky");
+                    $fakeSticky.style.top = 0;
+                    var popup = document.getElementById("myPopup");
+                    var popup2 = document.getElementById("myPopup2");
+                    if (!$realSticky) {
+                        return;
+                    }
+                    if (!$fakeSticky) {
+                        return;
+                    }
+                    if (!popup) {
+                        return;
+                    }
+                    if (!popup2) {
+                        return;
+                    }
+                    if (popup.classList.contains("show")) {
+                        popup.classList.toggle("show");
+                    }
+                    if (popup2.classList.contains("show2")) {
+                        popup2.classList.toggle("show2");
+                    }
+                } else {
+                    $realSticky.classList.add("sticky");
+                    $fakeSticky.style.top = `-${sr2.height / 2 + 1}px`;
+                    var popup = document.getElementById("myPopup");
+                    var popup2 = document.getElementById("myPopup2");
+                    if (!$realSticky) {
+                        return;
+                    }
+                    if (!$fakeSticky) {
+                        return;
+                    }
+                    if (!popup) {
+                        return;
+                    }
+                    if (!popup2) {
+                        return;
+                    }
+                    if (popup.classList.contains("show")) {
+                        popup.classList.toggle("show");
+                    }
+                    if (popup2.classList.contains("show2")) {
+                        popup2.classList.toggle("show2");
+                    }
+                }
+            };
+
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+
+        function myFunction2() {
+            var popup = document.getElementById("myPopup2");
+            popup.classList.toggle("show2");
+        }
+        window.addEventListener("scroll", _.debounce(stickyHeader(), 15));
+    </script>
+</html>
