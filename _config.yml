@@ -1,8 +1,8 @@
 # Site settings
-title: "jahz.co"
-description: "Jahziel talks about computers!"
+title: "FATAL ERROR: Signal Received: SIGSEGV (11)"
+description: "Jahziel talks computers 👨‍💻"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 permalink: /:year/:title
 github: "jahzielv"
 twitter: "jahz_v"
