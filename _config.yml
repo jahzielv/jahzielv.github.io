@@ -7,7 +7,7 @@ permalink: /:year/:title
 github: "jahzielv"
 twitter: "jahz_v"
 email: "jve@jahz.co"
-disqus-id: "example" #leave blank if you dont want comments.
+disqus-id: "" #leave blank if you dont want comments.
 
 # Build settings
 markdown: kramdown
