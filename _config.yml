@@ -2,7 +2,7 @@
 title: "FATAL ERROR: Signal Received: SIGSEGV (11)"
 description: "Jahziel talks computers 👨‍💻"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://jahz.co" # the base hostname & protocol for your site
+url: https://jahz.co/ # the base hostname & protocol for your site
 permalink: /:year/:title
 github: "jahzielv"
 twitter: "jahz_v"
