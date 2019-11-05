@@ -1,10 +1,11 @@
 # Site settings
 title: "FATAL ERROR: Signal Received: SIGSEGV (11)"
 description: "Jahziel talks computers 👨‍💻"
+url: "https://jahz.co" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://jahz.co/" # the base hostname & protocol for your site
 permalink: /:year/:title
 github: "jahzielv"
+github_url: "https://jahz.co"
 twitter: "jahz_v"
 email: "jve@jahz.co"
 disqus-id: "" #leave blank if you dont want comments.
