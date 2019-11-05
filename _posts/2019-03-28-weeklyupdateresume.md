@@ -24,7 +24,7 @@ hackmyresume build resume.json TO out/resume.all -t node_modules/jsonresume-them
 
 should dump the output files into a new directory called `out`; `hackmyresume` currently handles output to HTML, Markdown, LaTeX, MS Word, PDF, plain text, JSON, and YAML. If you open up your HTML doc in a browser, you should see something like this:
 
-<img src="/assets/resumepic.png" alt="Screenshot of Jahz's resume" style="max-width: 100%;">
+<img src="/assets/resumepic.png" alt="Screenshot of Jahz's resume">
 
 Go out and try it yourself!
 
