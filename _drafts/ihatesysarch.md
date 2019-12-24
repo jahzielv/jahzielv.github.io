@@ -10,7 +10,9 @@ title: Why people hate systems programming and how to make them love it
 
 ### Outline 
 
-- **Thesis**: Systems programming is difficult. It doesn't have to be as hard as it is. Both traditional and non-traditional education groups can improve how they teach systems programming. Every engineer should know some minial amount of systems programming – at least how a computer works.
+- **Thesis**: Systems programming is difficult. It doesn't have to be as scary or as hard to get into as it currently is. Both traditional and non-traditional education groups can improve how they teach systems programming. IMO, every engineer can benefit from knowing some minimal amount of systems programming – at least how a computer works.
+- Intro:
+  - 
 - Body 1: what's broken about systems education
   - Academia: it's too caustic/negative
   - Non-trad: it's non-existent to a large degree
