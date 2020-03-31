@@ -4,7 +4,7 @@ title: About the author
 ---
 
 ### Stuff you should know about me!
-i
+
 -   I'm currently pursuing a B.S. in Computer Science from the Georgia Institute of Technology! #THWg
 
 *   My degree threads (areas of concentration) are Systems & Architecture and People. I love all software development, but I'm especially passionate about tooling and computer systems design: browser development, language and compiler design, and operating systems.
