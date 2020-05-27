@@ -14,7 +14,7 @@ title: About the author
 -   My leadership skills have been pretty well honed through the years. I've lead my campus ministry’s music team for 3 years. I also headed up IT support for a primary client at Ambitechstrous IT LLC while still in high school. During Summer 2019, I was Project Managing an all-intern team at State Farm. Through these experiences, I’ve been able to learn how to work with diverse teams to reach common goals.
 
 -   When I’m not doing computer things (either for work or for fun!) you can usually find me:
-    -   Doing outdoor sports (camping, backpacking, rock climbing);
+    -   Running (preferably on a trail!)
     -   Reading;
     -   Playing music (I play acoustic and electric guitar, bass guitar, and percussion);
     -   Or catching up on my favorite TV shows and movies!
