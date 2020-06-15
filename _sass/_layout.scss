@@ -11,7 +11,6 @@
     background: $green;
 }
 
-
 /*****************************************************************************/
 /*
 /* Basic
@@ -29,7 +28,7 @@ a {
     -webkit-transition: color 0.25s ease-in, background 0.25s ease-in;
     -moz-transition: color 0.25s ease-in, background 0.25s ease-in;
     -o-transition: color 0.25s ease-in, background 0.25s ease-in;
-    transition: color 0.25s ease-in, background 0.25s ease-in
+    transition: color 0.25s ease-in, background 0.25s ease-in;
 }
 
 p {
@@ -42,28 +41,31 @@ p {
     overflow: hidden;
 
     img {
-      max-width: 100%;
-      height: auto;
+        max-width: 100%;
+        height: auto;
     }
+}
+
+li {
+    padding: 0.65em;
 }
 
 .main-content {
-  width: 65%;
-  float:right;
-  padding:0;
+    width: 65%;
+    float: right;
+    padding: 0;
 
-  a {
-    color: #d21717;
-    &:hover,
-    &:focus {
-      color: #E40000;
+    a {
+        color: #d21717;
+        &:hover,
+        &:focus {
+            color: #e40000;
+        }
     }
-  }
-  .module {
-    margin-left: 0;
-  }
+    .module {
+        margin-left: 0;
+    }
 }
-
 
 /*****************************************************************************/
 /*
@@ -72,23 +74,23 @@ p {
 /*****************************************************************************/
 
 nav {
-  a {
-    padding: 0.4em;
-    background: #fff;
-    display:inline-block;
-    &:nth-child(2n) {
-      margin: 10px;
+    a {
+        padding: 0.4em;
+        background: #fff;
+        display: inline-block;
+        &:nth-child(2n) {
+            margin: 10px;
+        }
+        &:hover {
+            background: $link-hover;
+            border: 0;
+            color: #fff !important;
+            // for now
+        }
     }
-    &:hover {
-      background: $link-hover;
-      border: 0;
-      color: #fff !important;
-      // for now
+    .module {
+        padding-top: $spacing-unit;
     }
-  }
-  .module {
-    padding-top: $spacing-unit;
-  }
 }
 
 /*****************************************************************************/
@@ -103,25 +105,25 @@ nav {
     line-height: 1.7;
 
     h1 {
-      margin: 0;
+        margin: 0;
     }
 
     h1#header-title {
-      font-size: 140%;
+        font-size: 140%;
     }
 
     a {
-      color: #000;
-      font-weight: normal;
-      &:hover,
-      &:focus {
         color: #000;
-      }
+        font-weight: normal;
+        &:hover,
+        &:focus {
+            color: #000;
+        }
     }
 }
 
 header {
-  background: $blue;
+    background: $blue;
 }
 
 /*****************************************************************************/
@@ -131,18 +133,18 @@ header {
 /*****************************************************************************/
 
 article {
-  p {
-    a {
-      border-bottom: .125em solid #ccc;
-      padding: 0 0 .15em 0;
-      display: inline;
-      &:hover {
-        background: $link-hover;
-        border: 0;
-        color: #fff !important;
-      }
+    p {
+        a {
+            border-bottom: 0.125em solid #ccc;
+            padding: 0 0 0.15em 0;
+            display: inline;
+            &:hover {
+                background: $link-hover;
+                border: 0;
+                color: #fff !important;
+            }
+        }
     }
-  }
 }
 
 time {
@@ -166,7 +168,7 @@ pre {
 
 blockquote {
     position: relative;
-    border: .1em solid #ddd;
+    border: 0.1em solid #ddd;
     border-top-color: #eee;
     border-bottom-color: #bbb;
     padding: $spacing-unit;

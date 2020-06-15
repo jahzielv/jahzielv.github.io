@@ -2,8 +2,6 @@
 layout: post
 title: May Updates
 ---
-# May Updates Post
-
 I've decided to start recording what I've done during the month and summarize it here on my blog. In classic Jahziel fashion, I'm publishing May's updates well into June, but better late than never! I'll be recording mostly computing stuff I've been up to, but you'll also see stuff from other areas in my life (books I've read, interesting non-computing articles, etc.) Anywho, here's what I've been up to in May 2020!
 
 ## Stuff I've Learned
