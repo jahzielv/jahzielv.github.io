@@ -46,10 +46,6 @@ p {
     }
 }
 
-li {
-    padding: 0.65em;
-}
-
 .main-content {
     width: 65%;
     float: right;
@@ -64,6 +60,9 @@ li {
     }
     .module {
         margin-left: 0;
+    }
+    li {
+        padding: 0.65em;
     }
 }
 
