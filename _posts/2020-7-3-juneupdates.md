@@ -1,6 +1,6 @@
 ---
 layout: post
-title: juneupdates
+title: June Updates
 ---
 ## Stuff I've Learned
 
