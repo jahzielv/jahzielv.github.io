@@ -4,8 +4,6 @@ title: August Updates
 ---
 # August Updates
 
-Status: Drafts
-
 What's that? A missing monthly update? I have no idea what you're talking about!
 
 In all seriousness, July was a pretty busy time for me. My summer semester was wrapping up, which was pretty tough with 3 project based classes. Thankfully everything went well and I got pretty good grades, which set me up well for the last 2 classes of my undergrad career that started in August! I'm 3 weeks into this semester, where I'm taking Processor Design (CS 3220) and Computer Networking I (CS 3251). Both these classes are a return to my systems programming roots, which I'm very excited about. It looks like there's some exciting projects in store for both of them! Other than classes, I've been doing my best to connect with my friends on campus when I can, and staying inside the rest of the time. Georgia still has a pretty high rate of COVID-19 infection unfortunately, which means most of my usual pursuits outside of school are either cancelled or very modified this semester. Anywho, let's get to the update! 
