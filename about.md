@@ -5,9 +5,9 @@ title: About the author
 
 ### Stuff you should know about me!
 
--   I'm currently pursuing a B.S. in Computer Science from the Georgia Institute of Technology! #THWg
+-   I'm a proud Georgia Tech alumnus! I graduated in December 2020 with my Bachelor's of Science in Computer Science.
 
-*   My degree threads (areas of concentration) are Systems & Architecture and People. I love all software development, but I'm especially passionate about tooling and computer systems design: browser development, language and compiler design, and operating systems.
+-   I love all software development, but I'm especially passionate about tooling and computer systems design: browser development, language and compiler design, and operating systems.
 
 -   Favorite languages: C, JavaScript, and Go! (Currently learning Rust)
 
